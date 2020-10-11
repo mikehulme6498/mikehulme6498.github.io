@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <title> Sudoku </title>
+    </head>
+    
+    <body>
+        <div id="mainContent">
+            <div id="mainGrid">
+                <div id="grid1" class="smallGrid"></div>
+                <div id="grid2" class="smallGrid"></div>
+                <div id="grid3" class="smallGrid"></div>
+                <div id="grid4" class="smallGrid"></div>
+                <div id="grid5" class="smallGrid"></div>
+                <div id="grid6" class="smallGrid"></div>
+                <div id="grid7" class="smallGrid"></div>
+                <div id="grid8" class="smallGrid"></div>
+                <div id="grid9" class="smallGrid"></div>
+            </div>
+
+            <div id="rightBox">
+                
+
+                <button id="nakedCells" onclick="fillNakedCells()">Fill Naked Cells</button>
+                <button id="rowCol" onclick="fillRowCol()">Fill Rows & Columns</button>
+                <button id="threeRow" onclick="check3Rows()">Check 3 Rows</button>
+                <div id="steps"><ol id="stepsOl"></ol></div>
+            </div>
+           
+        </div>
+            <script src="scripts.js"></script>
+</body>
+    
+</html>

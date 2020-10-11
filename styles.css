@@ -1,0 +1,98 @@
+#mainContent {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    background-color: lightgray;
+}
+
+#mainGrid {
+    width:500px;
+    
+    display: grid;
+    grid-template-columns: 151px 151px 151px;
+    /*grid-template-rows: 158px 158px 158px;*/
+    justify-content: center;
+    padding:10px;
+    margin:0;
+    background-color: white;
+}
+.smallGrid {
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+    /*background-color: black;*/
+    width: 155px;
+    height: 155px;
+    display: grid;
+    padding-top: 2px;
+    padding-left: 1px;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+    background-color: black;
+}
+
+#rightBox{
+   margin-top:20px;
+   
+  }
+
+#steps{
+    margin-top: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:yellow;
+    max-height:400px;
+    overflow-y:auto;
+
+}
+
+
+.smallGrid:nth-child(odd) {
+    /*background-color:yellow;*/
+}
+.cell {
+    
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    display: inline;
+    text-align: center;
+    border: solid;
+    border-width: thin;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Arial Rounded MT';
+    margin: auto;
+}
+
+
+.cell:hover{
+    background-color:gray;
+}
+
+.cell p{
+    position:relative;
+    top:-7px;
+   
+}
+
+.cellChanged{
+    animation-name: cellChanged;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+
+@keyframes cellChanged {
+    0% {
+        color: black;
+        background-color: white;
+    }
+    
+    50% {
+        color: white;
+        background-color:green;
+        }
+
+    100% {
+        color: black;
+        background-color: white;
+    }
+}
